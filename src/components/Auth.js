@@ -49,12 +49,12 @@ const Auth = () => {
             <div className="auth-container">
                 <div className="auth-container-box">
                     <div className="auth-options">
-                        <button onClick={() => viewLogin(false)}
-                            style={{ backgroundColor: !isLogIn ? 'rgb(255,255,255)' : 'rgb(188,188,188)' }}
-                        >สมัครสมาชิก</button>
                         <button onClick={() => viewLogin(true)}
                             style={{ backgroundColor: isLogIn ? 'rgb(255,255,255)' : 'rgb(188,188,188)' }}
                         >เข้าสู่ระบบ</button>
+                        <button onClick={() => viewLogin(false)}
+                            style={{ backgroundColor: !isLogIn ? 'rgb(255,255,255)' : 'rgb(188,188,188)' }}
+                        >สมัครสมาชิก</button>
                     </div>
                     <form>
                         <img className="icon-login"
