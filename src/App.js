@@ -32,6 +32,7 @@ const App = () => {
   const sortedTasks = tasks?.sort((a, b) => new Date(a.date) - new Date(b.date));
 
   return (
+    <body>
     <div className="app">
       {!authToken && <Auth/>}
       {authToken &&
@@ -42,6 +43,25 @@ const App = () => {
         <ListItem key={task.id} task={task} getData={getData} />))}
         </>}
     </div>
+    <div class="wrapper">
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+    </div>
+  </body>
+
   );
 };
 
