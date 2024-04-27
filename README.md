@@ -56,3 +56,14 @@ npm install
 ```bash
 npm start
 ```
+###
+
+<h2 align="left">Configuration</h2>
+
+###
+
+<p align="left">Before using the API, make sure to set up your environment variables by creating a .env file in the root directory of your project. This file should contain sensitive information such as your API key or database credentials.</p>
+
+###
+
+
